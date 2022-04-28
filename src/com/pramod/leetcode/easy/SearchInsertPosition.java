@@ -1,3 +1,4 @@
+package com.pramod.leetcode.easy;
 class SearchInsertPosition {
 
 	public static void main(String[] args) {
@@ -8,7 +9,7 @@ class SearchInsertPosition {
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] == target) {
 				return i;
-			} else if (nums.length-1 == i && target > nums[i]) {
+			} else if (nums.length - 1 == i && target > nums[i]) {
 				return i + 1;
 			} else if (target > nums[i] && target < nums[i + 1]) {
 				return i + 1;
